@@ -35,5 +35,28 @@
     <section>
 
     </section>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(() => {
+            alert('ESTÁ FUNCIONANDO');
+
+            $.get('http://localhost:3000/docentes', data => {
+                console.log(data);
+            });
+            
+
+                // $.ajax({
+                //     url: 'localhost:3000/docentes',
+                //     method: 'GET',
+                //     success: data => console.log(data),
+                //     fail: err => console.log(err)
+                // })
+            }
+        );
+    </script>
+
 </body>
 </html>
