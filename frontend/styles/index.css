@@ -1,0 +1,73 @@
+/* Configuración general */
+*{
+    margin: 0;
+    border: 0 ;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 25%;
+    width: 75%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    background-color: lightgray;
+}
+
+header h4{
+    font-family: 'Calibri';
+    align-self: center;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+/* Menu lateral: Side-Menu */
+.side-menu{
+    width: 25%;
+    height: 100vh;
+    background-color: #b0361e;
+    display: inline-block;
+    position: fixed;
+}
+
+/* Navbar: UAO Accreditation */
+.side-menu > h4{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Calibri';
+    font-weight: normal;
+    font-size: 25px;
+}
+
+/* Lista que contiene los li y los links  */
+
+.side-menu ul{
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Contenedor o li para cada link */
+
+.side-menu li{
+    display: flex;
+}
+
+/* Links de cada menú: Usuario, Asignaturas, Grupos, Mensajes y Reportes */
+
+.side-menu a{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'system-ui';
+}
+
+.side-menu a:hover{
+    background-color: #8c2b18;
+}

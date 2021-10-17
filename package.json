@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "my-first-app",
   "version": "0.0.0",
   "scripts": {
@@ -35,5 +36,28 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
+=======
+  "name": "uao-accreditation",
+  "version": "1.0.0",
+  "description": "Un proyecto universitario para la materia de ingeniería de software 1, desarrollado por Intinazca Pazan, Juan Diego Cobo, Andres Ramirez y Camilo Franco Moya.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloFrancoMoya/gestion-documental-ABET.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloFrancoMoya/gestion-documental-ABET/issues"
+  },
+  "homepage": "https://github.com/CamiloFrancoMoya/gestion-documental-ABET#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+>>>>>>> 62af746e985515dde54fdc14f524b6e157e8688c
   }
 }
