@@ -1,0 +1,56 @@
+
+h6{
+    color: white;
+}
+.i-containner{
+    width: 261px;
+    height: 56rem;    
+}
+.i-fondo{
+height: 957px;
+
+}
+.o-rr{position: absolute;
+    display: flex;
+    flex-direction: column;
+
+}
+.i-container1{
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+   border-bottom: solid white;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.i-logo{
+    width: 55px;
+    height: 43px;
+}
+.i-container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    border-bottom: solid white;  
+    margin: 20px;
+    padding: 2px;
+    width: 220px;
+    height: 70px;
+}
+
+.i-container2:hover{
+    background: rgba(242, 242, 242, 0.2);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.i-imgb{
+    width: 30px;
+    height: 30px;   
+}
+
+.i-triangulo{
+    width: 13px;
+    height: 8px;    
+}
+

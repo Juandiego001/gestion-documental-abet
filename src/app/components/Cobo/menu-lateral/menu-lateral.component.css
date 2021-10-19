@@ -11,7 +11,7 @@
 /* Imagen de fondo del menú lateral: Librería */
 .side-menu::before{    
     content: "";
-    background-image: url("../../../assets/imgs/libreria.png");
+    background-image: url("../../../../assets/imgs/libreria.png");
     background-size: cover;
     position: absolute;
     top: 0px;

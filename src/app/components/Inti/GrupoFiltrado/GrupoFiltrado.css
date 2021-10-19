@@ -1,0 +1,96 @@
+.i-pagina{
+    display: flex;
+    justify-content: space-between;
+}
+.rjo{
+    width: 100rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rjo1{
+    width: 12rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.rjoName{
+    width: 10rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.i-rjo{
+    width: 30px;
+    height: 30px;
+   
+}
+
+
+
+.i-filter{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.i-drops{
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 45rem;
+}
+.i-botonA{
+margin-right: 120px;
+font-weight: bold;
+
+}
+.btn{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    border-color: black;
+}
+
+
+.i-empezar{
+    position: absolute;
+    width:100rem;
+    height: 45rem;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.i-imgb{
+
+}
+.i-uaoFondo{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100rem;
+    height: 52rem;
+}
+
+.i-grupito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 350px;
+    
+}

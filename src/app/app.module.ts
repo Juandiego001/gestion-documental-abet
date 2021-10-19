@@ -8,6 +8,11 @@ import { MenuLateralComponent } from './components/Cobo/menu-lateral/menu-latera
 import { MenuHeaderComponent } from './components/Cobo/menu-header/menu-header.component';
 import { IniciarSesionComponent } from './components/Cobo/iniciar-sesion/iniciar-sesion.component';
 import { HomeDocentesComponent } from './components/Cobo/home-docentes/home-docentes.component';
+import { GruposAsignatura } from './components/Inti/GruposAsignatura';
+import { prueba } from './components/prueba/prueba';
+import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
+import { componentMateria } from './components/Legarda/componentMateria';
+import {Grupito} from './components/Inti/Grupito/Grupito';
 
 import { UsuariosService } from './services/usuarios.service';
 
@@ -17,7 +22,12 @@ import { UsuariosService } from './services/usuarios.service';
     MenuLateralComponent,
     MenuHeaderComponent,
     IniciarSesionComponent,
-    HomeDocentesComponent
+    HomeDocentesComponent,
+    GruposAsignatura,
+    prueba,
+    GrupoFiltrado,
+    componentMateria,
+    Grupito,
   ],
   imports: [
     BrowserModule,

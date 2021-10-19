@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GruposAsignatura } from './components/Inti/GruposAsignatura';
+import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
 
 import { IniciarSesionComponent } from './components/Cobo/iniciar-sesion/iniciar-sesion.component';
 import { HomeDocentesComponent } from './components/Cobo/home-docentes/home-docentes.component';
@@ -14,8 +16,16 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeDocentesComponent
+  },
+  {
+    path: 'Grupo', 
+    component: GruposAsignatura
+  },
+  {
+    path:'GrupoFiltrado', 
+    component: GrupoFiltrado
   }
-];
+]; 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

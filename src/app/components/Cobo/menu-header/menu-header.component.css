@@ -19,7 +19,7 @@ header h6{
 header .notificacion{
     width: 36px;    
     height: 36px;
-    background-image: url('../../../assets/imgs/notificacion.png');
+    background-image: url('../../../../assets/imgs/notificacion.png');
     background-repeat: no-repeat;
     justify-self: center;
     align-self: center;
