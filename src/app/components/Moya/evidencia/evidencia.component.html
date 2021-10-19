@@ -1,0 +1,15 @@
+<table matSort (matSortChange)="sortData($event)">
+  <tr>
+    <th mat-sort-header="nombre">Nombre</th>
+    <th mat-sort-header="fecha_mod">Fecha modificación</th>
+    <th mat-sort-header="tipo">Tipo</th>
+    <th mat-sort-header="tamano">Tamaño (MB)</th>
+  </tr>
+
+  <tr *ngFor="let Archivo of sortedData">
+    <td>{{Archivo.nombre}}</td>
+    <td>{{Archivo.fecha_mod}}</td>
+    <td>{{Archivo.tipo}}</td>
+    <td>{{Archivo.tamano}}</td>
+  </tr>
+</table>

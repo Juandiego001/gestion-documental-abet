@@ -1,0 +1,11 @@
+.top {
+    margin: 30px;
+}
+.mat-green {
+    background-color: #37C47A;
+    color: #fff;
+}
+mat-grid-tile {
+    text-align: center;
+    margin: 30px;
+}
