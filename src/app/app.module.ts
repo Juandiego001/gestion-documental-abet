@@ -6,7 +6,9 @@ import { GruposAsignatura } from './components/Inti/GruposAsignatura';
 import { prueba } from './components/prueba/prueba';
 import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
 import { componentMateria } from './components/Legarda/componentMateria';
-import {Grupito} from './components/Inti/Grupito/Grupito'
+import {Grupito} from './components/Inti/Grupito/Grupito';
+import { filtromateria } from './components/Legarda/filtromateria/filtromateria'; 
+import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFiltrada';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import {Grupito} from './components/Inti/Grupito/Grupito'
     GrupoFiltrado,
     componentMateria,
     Grupito,
+    filtromateria,
+    Materiafiltrada,
   ],
   imports: [
     BrowserModule,
