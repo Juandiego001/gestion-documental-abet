@@ -85,3 +85,12 @@ font-weight: bold;
     width:100rem;
     height: 52rem;
 }
+
+.i-grupito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 350px;
+    
+}

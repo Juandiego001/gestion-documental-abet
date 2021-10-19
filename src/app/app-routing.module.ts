@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { GruposAsignatura } from './components/Inti/GruposAsignatura';
 import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
 
-
 const routes: Routes = [
   { path: 'Grupo', component: GruposAsignatura},
   {path:'GrupoFiltrado', component: GrupoFiltrado},
