@@ -1,0 +1,48 @@
+/* Header: Asignaturas - Mensajes - Usuario */
+header {
+    margin-left: 23%;
+    width: 74%;
+    margin-right: 3%;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+header h6{
+    font-family: 'Roboto';
+    align-self: center;
+    font-size: 1.85rem;
+    color: rgb(57, 57, 57);
+}
+
+header .notificacion{
+    width: 36px;    
+    height: 36px;
+    background-image: url('../../../assets/imgs/notificacion.png');
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.notificacion::before{
+    content: "5";
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .usuario{
+    align-self: center;
+}

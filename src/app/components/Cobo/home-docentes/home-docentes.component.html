@@ -1,0 +1,80 @@
+<!--  Menú lateral -->
+<nav class="side-menu">
+    <div>
+        <img src="../../../../assets/imgs/uao-accreditation-blanco.svg" alt="Logo uao-accreditation" />
+    </div>        
+    <ul>
+        <li>
+            <a href="#">
+                <div>
+                    <img class="icono-menu-lateral" src="../../../../assets/imgs/libros-educativos.png" alt="Icono libros"/>
+                    <span>Andrés Chapman</span>
+                </div>
+                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha" />
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <div>
+                    <img class="icono-menu-lateral" src="../../../../assets/imgs/libros-educativos.png" alt="Icono libros" />
+                    <span>Asignaturas</span>
+                </div>
+                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha" />
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <div>
+                    <img class="icono-menu-lateral" src="../../../../assets/imgs/grupos.png" alt="Icono grupos" />
+                    <span>Grupos</span>
+                </div>
+                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <div>
+                    <img class="icono-menu-lateral" src="../../../../assets/imgs/mensajes.png" alt="Icono mensajes"/>
+                    <span>Mensajes</span>
+                </div>
+                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <div>
+                    <img class="icono-menu-lateral" src="../../../../assets/imgs/reportes.png" alt="Icono reportes"/>
+                    <span>Reportes</span>
+                </div>
+                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<header class="header-home-docentes">
+    <!-- Titulo o información de la página actual (Ej: Asignaturas) -->
+    <h6>Asignaturas</h6>
+
+    <div class="notificacion"></div>
+
+    <img class="usuario" src="../../../../assets/imgs/usuario.png" (click)="toggleMostrar(); false" />
+</header>
+
+<section class="section-home-docentes">
+    <!-- Cuadro de diálogo de cerrar sesión -->
+    <div #containerCerrarSesion [ngClass]="{'mostrar-container-cerrar-sesion': boolMostrar == true}" class="container-cerrar-sesion">
+        <div>
+            <a href="" (click)="cerrarSesion(); false"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+        </div>
+
+        <ul>
+            <li>Políticas de privacidad</li>
+            <li>Términos y condiciones</li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,205 @@
+/* Header: Asignaturas - Mensajes - Usuario */
+.header-home-docentes {
+    margin-left: 23%;
+    width: 74%;
+    margin-right: 3%;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.header-home-docentes h6{
+    font-family: 'Roboto';
+    align-self: center;
+    font-size: 1.85rem;
+    color: rgb(57, 57, 57);
+}
+
+.header-home-docentes .notificacion{
+    width: 36px;    
+    height: 36px;
+    background-image: url('../../../../assets/imgs/notificacion.png');
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.notificacion::before{
+    content: "5";
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-home-docentes .usuario{
+    align-self: center;
+}
+
+.header-home-docentes .usuario:hover{
+    cursor: pointer;
+}
+
+/* Menu lateral: Side-Menu */
+.side-menu{
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255, 0, 229, 0) 0%, rgba(255, 0, 0, 0.56) 0.01%, rgba(255, 0, 0, 0.7) 72.92%, rgba(255, 0, 0, 0.7) 100%);
+    display: grid;
+    grid-template-rows: 15% 85%;
+    position: fixed;
+}
+
+/* Imagen de fondo del menú lateral: Librería */
+.side-menu::before{    
+    content: "";
+    background-image: url("../../../../assets/imgs/libreria.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.35;
+}
+
+/* Contenedor de la imagen del menú lateral */
+.side-menu > div{
+    z-index: 1;
+    width: 90%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+/* Imagen del menú lateral */
+.side-menu > div > img{
+    width: 35%;
+}
+
+/* Lista que contiene los li y los links  */
+
+.side-menu ul{
+    width: 90%;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
+    justify-self: center;
+}
+
+/* Contenedor o li para cada link */
+.side-menu li{
+    display: flex;
+    width: 100%;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid white;
+}
+
+/* Links de cada menú: Usuario, Asignaturas, Grupos, Mensajes y Reportes */
+.side-menu a{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.side-menu a:hover{
+    background: rgba(242, 242, 242, 0.2);
+    border-radius: .5rem;
+}
+
+/* Contenedor de icónos y elemento de menú */
+.side-menu a > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+}
+
+/* Iconos al lado de cada elemento de menu */
+.side-menu .icono-menu-lateral{
+    margin-right: .5rem;
+}
+
+/* Icono de flecha */
+.side-menu a .flecha{
+    align-self: center;
+    padding-top: 12%;
+    justify-self: center;
+}
+
+/* Section de la página */
+.section-home-docentes {
+    position: relative;
+    background-color: white;
+    margin-left: 20%;
+    width: 80%;
+    height: 85vh;
+    overflow-x: hidden;
+}
+
+/* Contenedor cerrar sesión */
+.container-cerrar-sesion{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: white;
+    right: 3%;
+    top: 0px;
+    border-radius: 5%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    transform: translateX(150%);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.mostrar-container-cerrar-sesion {
+    transform: translateX(0%);
+}
+
+.container-cerrar-sesion > div {
+    justify-self: center;
+    width: 95%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: grid;
+}
+
+.container-cerrar-sesion > div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-cerrar-sesion ul{
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: .85rem;
+    padding-left: 15%;
+    align-self: center;
+}
