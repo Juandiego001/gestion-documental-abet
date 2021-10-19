@@ -13,6 +13,8 @@ import { prueba } from './components/prueba/prueba';
 import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
 import { componentMateria } from './components/Legarda/componentMateria';
 import {Grupito} from './components/Inti/Grupito/Grupito';
+import { filtromateria } from './components/Legarda/filtromateria/filtromateria'; 
+import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFiltrada';
 
 import { UsuariosService } from './services/usuarios.service';
 
@@ -28,6 +30,8 @@ import { UsuariosService } from './services/usuarios.service';
     GrupoFiltrado,
     componentMateria,
     Grupito,
+    filtromateria,
+    Materiafiltrada,
   ],
   imports: [
     BrowserModule,
