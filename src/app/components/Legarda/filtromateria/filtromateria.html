@@ -1,95 +1,67 @@
 <div class="i-pagina">
+    <!-- Menú lateral -->
     <prueba></prueba>
-    <!-- lateral -->
-    <div>
+
+    <!-- Section de la página -->
+    <div class="section-pagina">
+        <!-- Menú Header de la página (En la parte top de la página) -->
         <div class="rjo">
-            <div class="rjoName">
-                <h4>{{Asignaturas}}</h4>
-            </div>
-            <div class="rjo1">
-                <img class="i-rjo" src="../../../assets/mensajeblack.png" alt="">
-                <img class="i-rjo" src="../../../assets/user.png" alt="">
-            </div>
-        </div>
-        <!-- filtros -->
-        <div class="i-filter">
-            <!-- filtros -->
-            <div class="i-drops">
-                <div (click)= "navegate()">
-                    <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Asignatura
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Periodo académico
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-            <div class="container">
-                <div class="modal" tabindex="-1" id=modal1>
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Send message</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                </div>
-            <!-- boton -->
-            <div class="i-botonA" >
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target='modal1'>Crear asignatura</button>
-            </div>
+            <!-- Titulo: Asignaturas -->
+            <h4>{{Asignaturas}}</h4>
             
+            <!-- Contenedor de iconos mensaje y usuario (para cerrar sesión) -->
+            <div class="rjo1">
+                <img class="i-rjo" src="../../../../assets/mensajeblack.png" alt="">
+                <img class="i-rjo" src="../../../../assets/user.png" alt="">
+            </div>
         </div>
-        <!-- Empezar buscar -->
-        <div>
-            <div class="i-empezar">
-                <img src="../../../assets/empezar.png" alt="" class="i-imgb">
-                <h4>Empezar busqueda</h4>
+
+        <!-- Menú de filtros: Filtrar por asignatura, periodo académico o crear asignatura -->
+        <div class="i-filter">
+            
+            <!-- Filtro de asignatura -->
+            <div (click)="navegate('MateriaFiltrada'); false" class="dropdown contenedor-filtro">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asignatura
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- Filtro de periodo académico -->
+            <div (click)="navegate('MateriaFiltrada'); false" class="dropdown contenedor-filtro">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Periodo académico
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+                
+            <!-- Botón para crear grupo -->
+            <div class="contenedor-boton-crear-asignatura">
+                <button type="button" class="btn btn btn-light">Crear asignatura</button>
+            </div>
+        </div>
+
+
+        <!-- Sección de la sección principal. -->
+        <!-- Se muestra la imagen de búsqueda y demás detalles -->
+        
+        <!-- Contenedor de prototipo. -->
+        <!-- Muestra la imagen de la lupa e información para empezar a buscar -->
+        <div class="i-empezar">
+            <div>
+                <img src="../../../../assets/empezar.png" />
+                <h4>Empezar busqueda </h4>
                 <h6>Añade filtros para poder visualizar los cursos de su preferencia</h6>
             </div>
-            <div class="i-uaoFondo">
-                <img src="../../../assets/UAO-logo-fondo.png" alt="" class="i-imgb">
-            </div>
-            
         </div>
+
     </div>
 </div>

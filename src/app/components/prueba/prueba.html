@@ -1,37 +1,48 @@
-    <!-- lateral -->
-    <div class="i-containner">
-        <div class="o-rr">
-            <div class="i-container1">
-                <img src="../../../assets/LogoUAO.png" alt="" class="i-logo">
-            </div>
-            <div class="i-container2">
-                <img src="../../../assets/Profile.png" alt="" class="i-imgb">
-                <h6>{{NombreProfesor}}</h6>
-                <img class="i-triangulo" src="../../../assets/Polygon8.png">
-            </div>
-            <div class="i-container2">
-                <img src="../../../assets/libros.png" alt="" class="i-imgb">
-                <h6>Asignatura</h6>
-                <img class="i-triangulo" src="../../../assets/Polygon8.png">
-            </div>
-            <div class="i-container2">
-                <img src="../../../assets/educacion.png" alt="" class="i-imgb">
-                <h6>Grupos</h6>
-                <img class="i-triangulo" src="../../../assets/Polygon8.png">
-            </div>
-            <div class="i-container2">
-                <img src="../../../assets/mensaje.png" alt="" class="i-imgb">
-                <h6>Mensaje</h6>
-                <img class="i-triangulo" src="../../../assets/Polygon8.png">
-            </div>
-            <div class="i-container2">
-                <img src="../../../assets/reporte1.png" alt="" class="i-imgb">
-                <h6>Reporte</h6>
-                <img class="i-triangulo" src="../../../assets/Polygon8.png">
-            </div>
-        </div>
-        <div>
-            <img class="i-fondo" src="../../../assets/rojo.png" alt="">
+<!-- Menú Lateral -->
+<!-- Aplica para: MateriaFiltrada, Grupito, GrupoFiltrado -->
+<div class="i-container">
+    <!-- Logo al principio del menú -->
+    <div class="i-container1">
+        <img src="../../../assets/LogoUAO.png" alt="" class="i-logo">
+    </div>
+
+    <!-- Menú de elementos -->
+    <div class="o-rr">
+
+        <!-- Elemento del menú: Nombre del profesor -->
+        <div (click)="navigate('home')" class="i-container2">
+            <img src="../../../assets/Profile.png" alt="" class="i-imgb">
+            <h6>{{NombreProfesor}}</h6>
+            <img class="i-triangulo" src="../../../assets/Polygon8.png">
         </div>
 
-    </div>
+        <!-- Elemento del menú: Asignatura -->
+        <div (click)="navigate('filtromateria')" class="i-container2">
+            <img src="../../../assets/libros.png" alt="" class="i-imgb">
+            <h6>Asignatura</h6>
+            <img class="i-triangulo" src="../../../assets/Polygon8.png">
+        </div>
+
+        <!-- Elemento del menú: Grupos -->
+        <div (click)="navigate('Grupo')" class="i-container2">
+            <img src="../../../assets/educacion.png" alt="" class="i-imgb">
+            <h6>Grupos</h6>
+            <img class="i-triangulo" src="../../../assets/Polygon8.png">
+        </div>
+
+        <!-- Elemento del menú: Mensaje -->
+        <div class="i-container2">
+            <img src="../../../assets/mensaje.png" alt="" class="i-imgb">
+            <h6>Mensaje</h6>
+            <img class="i-triangulo" src="../../../assets/Polygon8.png">
+        </div>
+
+        <!-- Elemento del menú: Reporte -->
+        <div class="i-container2">
+            <img src="../../../assets/reporte1.png" alt="" class="i-imgb">
+            <h6>Reporte</h6>
+            <img class="i-triangulo" src="../../../assets/Polygon8.png">
+        </div>
+
+    </div>        
+</div>

@@ -16,7 +16,7 @@ export class GruposAsignatura{
         let Mensaje= `eje ${this.Grupos} ${this.num}.`;
         console.log(Mensaje);
     }
-    navegate(){
-        this.router.navigate(['/GrupoFiltrado']);    
+    navegate(url: String){
+        this.router.navigate([`/${url}`]);    
     }
 }

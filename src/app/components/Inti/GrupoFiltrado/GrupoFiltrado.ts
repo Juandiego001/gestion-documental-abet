@@ -10,7 +10,7 @@ export class GrupoFiltrado{
     public Grupos: String;
 
     constructor(private router: Router){
-        this.Grupos= "Grupos";
+        this.Grupos= "Grupos/Fundamentos de Ingeniería Multimedia";
         let Mensaje= `eje ${this.Grupos}.`;
         console.log(Mensaje);
     }

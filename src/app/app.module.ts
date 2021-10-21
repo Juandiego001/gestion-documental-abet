@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, TemplateRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -16,6 +16,9 @@ import {Grupito} from './components/Inti/Grupito/Grupito';
 import { filtromateria } from './components/Legarda/filtromateria/filtromateria'; 
 import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFiltrada';
 
+// Para el componente dinámico
+import { ComponentMateriaDirective } from './components/Legarda/componentMateria.directive'
+
 import { UsuariosService } from './services/usuarios.service';
 
 @NgModule({
@@ -32,6 +35,10 @@ import { UsuariosService } from './services/usuarios.service';
     Grupito,
     filtromateria,
     Materiafiltrada,
+    ComponentMateriaDirective
+  ],
+  entryComponents: [
+    componentMateria
   ],
   imports: [
     BrowserModule,
@@ -41,6 +48,7 @@ import { UsuariosService } from './services/usuarios.service';
   providers: [
     UsuariosService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

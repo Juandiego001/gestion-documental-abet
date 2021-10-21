@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'prueba',
@@ -12,10 +13,14 @@ export class prueba{
     public NombreAsignatura: string;
     
 
-    constructor(){
+    constructor(private router: Router){
         this.NombreProfesor= "Andrés Chapman";
         this.NombreAsignatura="Asignaturas"
         let Mensaje= `eje ${this.NombreProfesor}.`;
         console.log(Mensaje);
+    }
+
+    navigate(url: String) {
+        this.router.navigate([`/${url}`]);
     }
 }
