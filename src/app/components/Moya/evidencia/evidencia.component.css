@@ -1,0 +1,151 @@
+table {
+    width: 80%;
+    margin: 50px;
+}
+th{
+    height: 50px;
+}
+ /* Contenedor general: Contiene toda la página */
+ .i-pagina{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100vh;    
+}
+
+/* Se selecciona el segundo elemento hijo (div) */
+/* que contiene todo lo demás de la página */
+.section-pagina {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+}
+
+.section-pagina-asignaturas div:only-child {
+    width: 100%;
+}
+
+/* Contenedor Header de la página */
+.rjo {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid gray;
+}
+
+/* Se selecciona el H4 del contenedor Header de la página */
+.rjo h4 {
+    align-self: center;
+    padding-left: .75rem;
+}
+
+/* Contenedor de imágenes: Mensaje y Usuario (para cerrar sesión) */
+.rjo1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.rjo1 img {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Contenedor menú de filtros */
+.i-filter {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+/* Contenedor: Contiene cada uno de los elementos y submenús */
+/* para seleccionar los reportes */
+.contenedor-filtro {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedor-filtro button{
+    height: 60%;
+    font-size: .75rem;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.contenedor-boton-crear-asignatura {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-boton-crear-asignatura button {
+    border: 1px solid black;
+}
+
+
+/* Contenedor Section: Sección principal de la página */
+.section-pagina-asignaturas {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('../../../../assets/UAO-logo-fondo.png');
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+}
+
+.section-pagina-asignaturas div:only-child {
+    width: 100%;
+}
+
+.col div:hover {
+    cursor: pointer;
+}
+
+/* Contenedor: Crear asignaturas */
+.contenedor-crear-asignatura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.4);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ocultar-contenedor-asignatura {
+    display: none;
+}
+
+.i-empezar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.i-empezar > div {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+/* Para botón */
+.mat-green {
+    background-color: #37C47A;
+    color: #fff;
+}
+
+.row > div, .top{
+    padding-left: 5%;
+}
+

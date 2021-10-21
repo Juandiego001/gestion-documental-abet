@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MenuLateralComponent } from './components/Cobo/menu-lateral/menu-lateral.component';
 import { MenuHeaderComponent } from './components/Cobo/menu-header/menu-header.component';
 import { IniciarSesionComponent } from './components/Cobo/iniciar-sesion/iniciar-sesion.component';
@@ -13,8 +15,15 @@ import { prueba } from './components/prueba/prueba';
 import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
 import { componentMateria } from './components/Legarda/componentMateria';
 import {Grupito} from './components/Inti/Grupito/Grupito';
-import { filtromateria } from './components/Legarda/filtromateria/filtromateria'; 
+import { filtromateria } from './components/Legarda/filtromateria/filtromateria';
 import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFiltrada';
+import { EvidenciasComponent } from './components/Moya/evidencias/evidencias.component';
+import { CarpetaEvidenciaComponent } from './components/Moya/carpetaEvidencia/carpetaEvidencia.component';
+import { EvidenciaComponent } from './components/Moya/evidencia/evidencia.component';
+
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatButtonModule } from "@angular/material/button";
+import { MatSortModule } from '@angular/material/sort';
 
 // Para el componente dinámico
 import { ComponentMateriaDirective } from './components/Legarda/componentMateria.directive'
@@ -35,15 +44,22 @@ import { UsuariosService } from './services/usuarios.service';
     Grupito,
     filtromateria,
     Materiafiltrada,
-    ComponentMateriaDirective
+    ComponentMateriaDirective,
+    EvidenciasComponent,
+    CarpetaEvidenciaComponent,
+    EvidenciaComponent
   ],
   entryComponents: [
-    componentMateria
+    componentMateria,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatSortModule
   ],
   providers: [
     UsuariosService
