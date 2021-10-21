@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { GruposAsignatura } from './components/Inti/GruposAsignatura';
 import { GrupoFiltrado } from './components/Inti/GrupoFiltrado/GrupoFiltrado';
+
 import { filtromateria } from './components/Legarda/filtromateria/filtromateria';
 import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFiltrada';
 
 import { IniciarSesionComponent } from './components/Cobo/iniciar-sesion/iniciar-sesion.component';
 import { HomeDocentesComponent } from './components/Cobo/home-docentes/home-docentes.component';
+
+import { EvidenciaComponent } from "./components/Moya/evidencia/evidencia.component";
+import { EvidenciasComponent } from "./components/Moya/evidencias/evidencias.component";
 
 // import {} from './components/'
 
@@ -20,11 +25,11 @@ const routes: Routes = [
     component: HomeDocentesComponent
   },
   {
-    path: 'Grupo', 
+    path: 'Grupo',
     component: GruposAsignatura
   },
   {
-    path:'GrupoFiltrado', 
+    path:'GrupoFiltrado',
     component: GrupoFiltrado
   },
   {
@@ -32,10 +37,18 @@ const routes: Routes = [
     component: filtromateria
   },
   {
-    path:'MateriaFiltrada', 
+    path:'MateriaFiltrada',
     component: Materiafiltrada
+  },
+  {
+    path: 'evidencia',
+    component: EvidenciaComponent
+  },
+  {
+    path: 'evidencias',
+    component: EvidenciasComponent
   }
-]; 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

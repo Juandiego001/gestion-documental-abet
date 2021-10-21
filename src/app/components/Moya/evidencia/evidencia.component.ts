@@ -15,6 +15,7 @@ export interface Archivo {
 })
 
 export class EvidenciaComponent implements OnInit {
+    public Grupos: String;
     archivos: Archivo[] = [
         {nombre: "Evidencia 1", fecha_mod: "2021-10-19 23:41", tipo: "Parcial", tamano: 700},
         {nombre: "Rubrica de evaluación", fecha_mod: "2021-10-19 23:41", tipo: "Documento guia", tamano: 700},
@@ -24,6 +25,7 @@ export class EvidenciaComponent implements OnInit {
     sortedData: Archivo[];
 
     constructor() {
+        this.Grupos= "Grupos/Fundamentos de ingenieria multimedia/Grupo1/Evidencias/Corte1";
         this.sortedData = this.archivos.slice();
     }
 

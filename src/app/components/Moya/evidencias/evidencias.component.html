@@ -1,20 +1,38 @@
-<div class="top">
-    Profesor: {{ nombre_profesor }}
-    <button type="button" style="margin-left:60px" mat-flat-button color="green">
-        Enviar mensaje
-    </button>
+<div class="i-pagina">
+    <prueba></prueba>
+    <!-- lateral -->
+    <div>
+        <div class="rjo">
+            <div class="rjoName">
+                <h4>{{Grupos}}</h4>
+            </div>
+            <div class="rjo1">
+                <img class="i-rjo" src="../../../assets/mensajeblack.png" alt="">
+                <img class="i-rjo" src="../../../assets/user.png" alt="">
+            </div>
+        </div>
+        <!-- Tabla -->
+        <div>
+            <div class="top">
+                Profesor: {{ nombre_profesor }}
+                <button type="button" style="margin-left:60px" mat-flat-button color="green">
+                    Enviar mensaje
+                </button>
+            </div>
+            <mat-grid-list cols="8" rowHeight="1:1">
+                <mat-grid-tile>
+                    <app-carpetaEvidencia></app-carpetaEvidencia>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-carpetaEvidencia></app-carpetaEvidencia>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-carpetaEvidencia></app-carpetaEvidencia>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-carpetaEvidencia></app-carpetaEvidencia>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
 </div>
-<mat-grid-list cols="8" rowHeight="1:1">
-    <mat-grid-tile>
-        <app-carpetaEvidencia></app-carpetaEvidencia>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <app-carpetaEvidencia></app-carpetaEvidencia>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <app-carpetaEvidencia></app-carpetaEvidencia>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <app-carpetaEvidencia></app-carpetaEvidencia>
-    </mat-grid-tile>
-</mat-grid-list>
