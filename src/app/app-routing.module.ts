@@ -13,7 +13,7 @@ import { HomeDocentesComponent } from './components/Cobo/home-docentes/home-doce
 import { EvidenciaComponent } from "./components/Moya/evidencia/evidencia.component";
 import { EvidenciasComponent } from "./components/Moya/evidencias/evidencias.component";
 
-// import {} from './components/'
+import { UsuarioGuard } from './guards/usuario.guard';
 
 const routes: Routes = [
   {
@@ -22,7 +22,8 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeDocentesComponent
+    component: HomeDocentesComponent,
+    canActivate: [UsuarioGuard]
   },
   {
     path: 'Grupo',

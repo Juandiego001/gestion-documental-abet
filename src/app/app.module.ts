@@ -28,7 +28,17 @@ import { MatSortModule } from '@angular/material/sort';
 // Para el componente dinámico
 import { ComponentMateriaDirective } from './components/Legarda/componentMateria.directive'
 
-import { UsuariosService } from './services/usuarios.service';
+// Services
+import { UsuariosService } from './services/usuario/usuario.service';
+
+// CookieService
+import { CookieService } from 'ngx-cookie-service';
+
+// Guards
+import { UsuarioGuard } from './guards/usuario.guard';
+
+// Interceptors
+import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';
 
 @NgModule({
   declarations: [
@@ -62,7 +72,8 @@ import { UsuariosService } from './services/usuarios.service';
     MatSortModule
   ],
   providers: [
-    UsuariosService
+    UsuariosService,
+    CookieService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { UsuariosService } from '../../../services/usuarios.service';
+import { UsuariosService } from '../../../services/usuario/usuario.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,7 +20,11 @@ export class IniciarSesionComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    
+  }
 
+  toggleContrasena(){
+    this.inputContrasena.nativeElement.type = this.inputContrasena.nativeElement.type === 'password' ? 'text' : 'password';
   }
 
   clickIniciarSesion(event?: MouseEvent) {
@@ -34,12 +38,10 @@ export class IniciarSesionComponent implements OnInit, AfterViewInit {
         if (this.usuario.length > 0){
           console.log(res);
           alert('Inicio de sesión exitoso!');
-          this.router.navigate(['/home'])
+          this.router.navigate(['/home']);
         } else {
           alert('Error. Por favor verifique los datos.');
-        }
-        
-    
+        }    
       },
       err => {
         alert('Ha ocurrido un error en el servidor.');

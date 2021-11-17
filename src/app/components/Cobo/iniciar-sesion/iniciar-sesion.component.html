@@ -11,7 +11,7 @@
             
             <div>
                 <input #contrasena type="password" name="" placeholder="Contraseña *" />
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-eye me-2" (click)="toggleContrasena(); false"></i>
             </div>            
 
             <button (click)="clickIniciarSesion(); false" class="btn-iniciar-sesion">Iniciar sesión</button>
