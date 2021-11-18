@@ -1,80 +1,77 @@
 <!--  Menú lateral -->
-<nav class="side-menu">
-    <div>
-        <img src="../../../../assets/imgs/uao-accreditation-blanco.svg" alt="Logo uao-accreditation" />
-    </div>        
-    <ul>
-        <li>
-            <a href="home">
-                <div>
-                    <img class="icono-menu-lateral" src="../../../../assets/imgs/libros-educativos.png" alt="Icono libros"/>
-                    <span>Andrés Chapman</span>
-                </div>
-                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha" />
-            </a>
-        </li>
+<app-menu-lateral></app-menu-lateral>
 
-        <li>
-            <a href="filtromateria">
-                <div>
-                    <img class="icono-menu-lateral" src="../../../../assets/imgs/libros-educativos.png" alt="Icono libros" />
-                    <span>Asignaturas</span>
-                </div>
-                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha" />
-            </a>
-        </li>
+<!-- Menu Header -->
+<app-menu-header></app-menu-header>
 
-        <li>
-            <a href="GruposAsignatura">
-                <div>
-                    <img class="icono-menu-lateral" src="../../../../assets/imgs/grupos.png" alt="Icono grupos" />
-                    <span>Grupos</span>
-                </div>
-                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
-            </a>
-        </li>
-
-        <li>
-            <a href="">
-                <div>
-                    <img class="icono-menu-lateral" src="../../../../assets/imgs/mensajes.png" alt="Icono mensajes"/>
-                    <span>Mensajes</span>
-                </div>
-                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
-            </a>
-        </li>
-
-        <li>
-            <a href="">
-                <div>
-                    <img class="icono-menu-lateral" src="../../../../assets/imgs/reportes.png" alt="Icono reportes"/>
-                    <span>Reportes</span>
-                </div>
-                <img class="flecha" src="../../../../assets/imgs/flecha.png" alt="Icono flecha"/>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<header class="header-home-docentes">
-    <!-- Titulo o información de la página actual (Ej: Asignaturas) -->
-    <h6>Asignaturas</h6>
-
-    <div class="notificacion"></div>
-
-    <img class="usuario" src="../../../../assets/imgs/usuario.png" (click)="toggleMostrar(); false" />
-</header>
-
+<!-- Contenido propio de Home Docentes -->
 <section class="section-home-docentes">
-    <!-- Cuadro de diálogo de cerrar sesión -->
-    <div #containerCerrarSesion [ngClass]="{'mostrar-container-cerrar-sesion': boolMostrar == true}" class="container-cerrar-sesion">
-        <div>
-            <a href="" (click)="cerrarSesion(); false"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
-        </div>
+    <!-- Cotenedor donde estarán los botones -->
+    <div class="contenedor-general-botones">
 
-        <ul>
-            <li>Políticas de privacidad</li>
-            <li>Términos y condiciones</li>
-        </ul>
+        <div class="contenedor-btn-asignatura-periodo">
+            <div class="btn-asignatura">
+                <span>Asignatura</span>
+                <i class="fa fa-angle-down"></i>
+            </div>
+
+            <div class="btn-periodo">
+                <span>Periodo académico</span>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        
+        <div class="contenedor-btn-crear">
+            <div class="btn-crear" (click)="toggleMostrarAsignatura()">
+                <span>Crear asignatura</span>
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de la imagen de busqueda y texto -->
+    <div class="contenedor-general-img-busqueda">
+        <div class="contenedor-img-busqueda">
+            <img src="../../../../assets/empezar.png" alt="Imagen de referencia de empezar o búsqueda" />
+            <h3>Empezar búsqueda</h3>
+            <p>Añade filtros para poder visualizar las materias de su preferencia.</p>
+        </div>
+    </div>
+
+    <!-- Contenedor para la creación de asingaturas -->
+    <div #contenedorCrearAsignatura class="contenedor-general-crear-asignaturas" [ngClass]="{'toggler-contenedor-general-asignatura': boolMostrarAsignatura == true}">
+        <div class="contenedor-formulario-crear-asignaturas">
+            <h2>Crear asignaturas</h2>
+            <form class="">
+                <div class="">
+                    <label>Nombre asignatura*</label>
+                    <label>Número de créditos*</label>
+                    <label>Programa académico*</label>
+                    <label>Código de asingatura*</label>
+                </div>
+                <div class="contenedor-input-crear-asignaturas">
+                    <input #inputNombreAsignatura type="text" name="nombre" id="nombre"/>
+                    <select #selectCreditosAsignatura name="creditos" id="creditos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                      <select #selectCarreraAsignatura name="carrera" id="carrera">
+                        <option value="Ingeniería biomédica">Ingeniería biomédica</option>
+                        <option value="Ingeniería mecatrónica">Ingeniería mecatrónica</option>
+                        <option value="Ingeniería industrial">Ingeniería industrial</option>
+                        <option value="Ingeniería mecánica">Ingeniería mecánica</option>
+                      </select>
+                    <input #inputCodigoAsignatura type="text" name="codigo" id="codigo"/>
+                </div>
+            </form>
+
+            <!-- Para cancelar o guardar -->
+            <div class="contenedor-btn-guardar-cancelar">
+                <button class="btn-cancelar-asginatura" (click)="toggleMostrarAsignatura()">Cancelar</button>
+                <button class="btn-guardar-asginatura" (click)="crearAsignatura()">Guardar</button>
+            </div>
+        </div>
     </div>
 </section>

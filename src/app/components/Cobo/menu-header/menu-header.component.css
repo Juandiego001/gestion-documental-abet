@@ -1,5 +1,5 @@
 /* Header: Asignaturas - Mensajes - Usuario */
-header {
+.contenedor-menu-header {
     margin-left: 23%;
     width: 74%;
     margin-right: 3%;
@@ -9,14 +9,14 @@ header {
     border-bottom: 1px solid rgb(196, 196, 196);
 }
 
-header h6{
+.contenedor-menu-header h6{
     font-family: 'Roboto';
     align-self: center;
     font-size: 1.85rem;
     color: rgb(57, 57, 57);
 }
 
-header .notificacion{
+.contenedor-menu-header .notificacion{
     width: 36px;    
     height: 36px;
     background-image: url('../../../../assets/imgs/notificacion.png');
@@ -43,6 +43,57 @@ header .notificacion{
     align-items: center;
 }
 
-header .usuario{
+.contenedor-menu-header .usuario{
+    align-self: center;
+}
+
+.contenedor-menu-header .usuario:hover {
+    cursor: pointer;
+}
+
+/* Contenedor cerrar sesión */
+.container-cerrar-sesion{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: white;
+    right: 3%;
+    top: 12%;
+    border-radius: 5%;
+    border: 1px solid black;
+    display: none;
+    grid-template-rows: 40% 60%;
+    z-index: 99;
+}
+
+/* Se encarga de mostrar el apartado para cerrar sesión */
+.mostrar-container-cerrar-sesion {
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.container-cerrar-sesion > div {
+    justify-self: center;
+    width: 95%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: grid;
+}
+
+.container-cerrar-sesion > div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-cerrar-sesion ul{
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: .85rem;
+    padding-left: 15%;
     align-self: center;
 }

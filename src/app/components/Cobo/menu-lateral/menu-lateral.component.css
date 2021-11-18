@@ -85,3 +85,11 @@
     padding-top: 12%;
     justify-self: center;
 }
+
+.perfil-usuario {
+    width: 25%;
+}
+
+div > img {
+    margin-right: 5%;
+}

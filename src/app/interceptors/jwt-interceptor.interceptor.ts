@@ -20,14 +20,13 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
     let req = request;
     let theHeaders = new HttpHeaders(
       {
-        authorization: `Bearer ${token}`
+        authorization: token
       });
 
     if (token) {
       req = request.clone({headers: theHeaders});
-
     }
 
-    return next.handle(request);
+    return next.handle(req);
   }
 }

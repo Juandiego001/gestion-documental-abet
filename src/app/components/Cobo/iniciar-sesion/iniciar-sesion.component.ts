@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { UsuariosService } from '../../../services/usuario/usuario.service';
+import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,7 +15,8 @@ export class IniciarSesionComponent implements OnInit, AfterViewInit {
 
   usuario: any = [];
 
-  constructor(private elem: ElementRef, private usuarioService: UsuariosService, private router: Router) { }
+  constructor(private elem: ElementRef, private usuarioService: UsuariosService, private router: Router,
+    private cookieService: CookieService) { }
 
   ngOnInit(): void {
   }
@@ -36,9 +38,14 @@ export class IniciarSesionComponent implements OnInit, AfterViewInit {
       res => {
         this.usuario = res;
         if (this.usuario.length > 0){
+
           console.log(res);
           alert('Inicio de sesión exitoso!');
+          this.cookieService.set('nombreUsuario', this.usuario[0]['nombreUsuario']);
+          this.cookieService.set('idSemestre', this.usuario[0]['idSemestre']);
+          this.cookieService.set('token', this.usuario[0]['token']);
           this.router.navigate(['/home']);
+
         } else {
           alert('Error. Por favor verifique los datos.');
         }    

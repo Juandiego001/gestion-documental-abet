@@ -1,8 +1,20 @@
-<header>
+<header class="contenedor-menu-header">
     <!-- Titulo o información de la página actual (Ej: Asignaturas) -->
     <h6>Asignaturas</h6>
 
     <div class="notificacion"></div>
 
-    <img class="usuario" src="../../../../assets/imgs/usuario.png" />
+    <img class="usuario" src="../../../../assets/imgs/usuario.png" (click)="toggleMostrar()"/>
+
+    <!-- Cuadro de diálogo de cerrar sesión -->
+    <div #containerCerrarSesion [ngClass]="{'mostrar-container-cerrar-sesion': boolMostrar == true}" class="container-cerrar-sesion">
+        <div>
+            <a href="" (click)="cerrarSesion(); false"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+        </div>
+
+        <ul>
+            <li>Políticas de privacidad</li>
+            <li>Términos y condiciones</li>
+        </ul>
+    </div>
 </header>
