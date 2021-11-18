@@ -1,15 +1,14 @@
+
 <div class="i-pagina">
     <!-- Menú lateral -->
     <prueba></prueba>
-
     <!-- Section de la página -->
     <div class="section-pagina">
         <!-- Menú Header de la página (En la parte top de la página) -->
         <div class="rjo">
-            <!-- Titulo: Asignaturas -->
-            <h4>{{Grupos}}</h4>
-            
-            <!-- Contenedor de iconos mensaje y usuario (para cerrar sesión) -->
+            <div class="rjoName">
+                <h4>{{Grupos}}</h4>
+            </div>
             <div class="rjo1">
                 <img class="i-rjo" src="../../../assets/mensajeblack.png" alt="">
                 <img class="i-rjo" src="../../../assets/user.png" alt="">
@@ -18,75 +17,286 @@
 
         <!-- Menú de filtros: Filtrar por asignatura, periodo académico o crear asignatura -->
         <div class="i-filter">
-            
-            <!-- Filtro de asignatura -->
-            <div (click)="navegate('GrupoFiltrado'); false" class="dropdown contenedor-filtro">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Asignatura
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
+            <div class="i-drops">
+                <!-- Filtro de asignatura -->
+                <div (click)="navegate('GrupoFiltrado'); false" class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Asignatura
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item"  href="#">Fundamentos de ingeniería multimedia</a></li>
+                        <li><a class="dropdown-item"  href="#">Seminario taller multimedia</a></li>
+                        <li><a class="dropdown-item"  href="#">Computación gráfica</a></li>
+                    </ul>
+                </div>
 
-            <!-- Filtro de periodo académico -->
-            <div class="dropdown contenedor-filtro">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Periodo académico
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-            
+                <!-- Filtro de periodo académico -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Periodo académico
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item"  href="#">2021-01</a></li>
+                        <li><a class="dropdown-item"  href="#">2021-03</a></li>
+                    </ul>
+                </div>
 
-            <!-- Filtro de student outcomes -->
-            <div class="dropdown contenedor-filtro">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Student Outcomes
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <!-- Filtro de student outcomes -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Student Outcomes
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">RAE-1. Problemas complejos de ingeniería</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-2. Diseño en ingeniería</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-3. Comunicación efectivae</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-4. Responsabilidades éticas y profesionales</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-5. Trabajo en equipo</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-6. Experimentación</a></li>
+                        <li><a class="dropdown-item" href="#">RAE-7. Autoaprendizaje</a></li>
+                    </ul>
+                </div>
+
+                <!-- Filtro de Indicadores de desempeño -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Indicadores de desempeño
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">1.1 Identificar y formular problemas complejos</a></li>
+                        <li><a class="dropdown-item" href="#">2.1 Aplica procesos estructurados de diseño</a></li>
+                        <li><a class="dropdown-item" href="#">3.1 Produce documentos con estructura, gramática y claridad</a></li>
+                        <li><a class="dropdown-item" href="#">4.1 Reconoce su responsabilidad ética y profesional</a></li>
+                        <li><a class="dropdown-item" href="#">5.1 El grupo de trabajo funciona de manera efectiva </a></li>
+                        <li><a class="dropdown-item" href="#">6.1 Desarrolla y dirige experimentos apropiados</a></li>
+                        <li><a class="dropdown-item" href="#">7.1 Investiga y aprende nuevos conocimientos por su cuenta</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <!-- Filtro de Indicadores de desempeño -->
-            <div class="dropdown contenedor-filtro">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Indicadores de desempeño
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-                
             <!-- Botón para crear grupo -->
             <div class="contenedor-boton-crear-asignatura">
-                <button type="button" class="btn btn btn-light">Crear grupo</button>
+                <button type="button" class="btn btn btn-light btnfiltross" (click)="openSM(contenido)">Crear grupo</button>
             </div>
         </div>
-
-
         <!-- Sección de la sección principal. -->
         <!-- Se muestra la imagen de búsqueda y demás detalles -->
-        
+
         <!-- Contenedor de prototipo. -->
         <!-- Muestra la imagen de la lupa e información para empezar a buscar -->
-        <div class="i-empezar">
-            <div>
-                <img src="../../../assets/empezar.png" />
-                <h4>Empezar busqueda </h4>
-                <h6>Añade filtros para poder visualizar los cursos de su preferencia</h6>
+        <div class="i-fondo">
+            <div class="i-empezar">
+                <img src="../../../assets/empezar.png" alt="" class="i-imgb">
+                <h2>Empezar búsqueda</h2>
+                <h4>Añade filtros para poder visualizar los cursos de su preferencia</h4>
+            </div>
+            <div class="i-uaoFondo">
+                <img src="../../../assets/UAO-logo-fondo.png" alt="" class="i-imgb">
             </div>
         </div>
 
     </div>
 </div>
+<!-- PARA EL MODAL-->
+<ng-template #contenido let-modal class="modal-lg">
+    <div class="i-container1">
+        <div  class="modal-header">
+            <h2 >Crear grupo</h2>
+        </div>
+        <!-- campos de texto-->
+        <div class="modal-body">
+            <div class="i-container">
+                <div class="i-datos1">
+                    <!-- selecciona la asignatura -->
+                    <div class="i-container2">
+                        <h4 class="crc">Nombre asignatura</h4>
+                        <div class="dropdown contenedor-filtro">
+                            <button class="btn btn-light dropdown-toggle filtrito btnmodal" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Fundamentos de ingeniería multimedia</a></li>
+                                <li><a class="dropdown-item" href="#">Seminario taller multimedia</a></li>
+                                <li><a class="dropdown-item" href="#">Computación gráfica</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- selecciona la el profesor -->
+                    <div  class="i-container2">
+                        <h4  class="crc">Nombre profesor</h4>
+                        <div class="dropdown contenedor-filtro">
+                            <button class="btn btn-light dropdown-toggle filtrito btnmodal" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Ándres Chapman</a></li>
+                                <li><a class="dropdown-item" href="#">Dolores Umbridge</a></li>
+                                <li><a class="dropdown-item" href="#"> Minerva McGonagall</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- selecciona el periodo-->
+                    <div  class="i-container2">
+                        <h4  class="crc">periodo académico</h4>
+                        <div class="dropdown contenedor-filtro">
+                            <button class="btn btn-light dropdown-toggle filtrito btnmodal" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">2022-01</a></li>
+                                <li><a class="dropdown-item" href="#">2022-02</a></li>
+                                <li><a class="dropdown-item" href="#">2022-03</a></li>
+                                <li><a class="dropdown-item" href="#">2022-04</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- campos de texto automaticos-->
+                <div class="i-datos1">
+                    <!-- selecciona el numero del grupo-->
+                    <div class="i-container2">
+                        <h4  class="crc">Grupo número</h4>
+                        <div class="dropdown contenedor-filtro">
+                            <button class="btn btn-light dropdown-toggle filtrito btnmodal" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- selecciona el numero del grupo-->
+                    <div class="i-container2">
+                        <h4  class="crc">Código</h4>
+                        <div class="dropdown contenedor-filtro">
+                            <button class="btn btn-light dropdown-toggle filtrito btnmodal" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- inician los chekcbox-->
+            <div class="i-container">
+
+                <div class="i-datos1">
+                    <!-- chekcbox 1-->
+                    <h4  class="crc">Student Outcomes</h4>
+                    <div class="i-container2">
+                        <h5>RAE-1. Problemas complejos de ingeniería</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+
+                    <!-- chekcbox 2-->
+                    <div class="i-container2">
+                        <h5>RAE-2. Diseño en ingeniería</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+
+                    <!-- chekcbox 3-->
+                    <div class="i-container2">
+                        <h5>RAE-3. Comunicación efectiva</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <!-- chekcbox 4-->
+                    <div class="i-container2">
+                        <h5>RAE-4. Responsabilidades éticas y profesionales</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <!-- chekcbox 5-->
+                    <div class="i-container2">
+                        <h5>RAE-5. Trabajo en equipo</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <!-- chekcbox 3-->
+                    <div class="i-container2">
+                        <h5>RAE-6. Experimentación</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <!-- chekcbox 3-->
+                    <div class="i-container2">
+                        <h5>RAE-7. Autoaprendizaje</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="i-datos1">
+                    <h4>Indicadores de desempeño</h4>
+                    <div class="i-container2">
+                        <h5>1.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>2.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>3.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>4.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>5.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>6.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="i-container2">
+                        <h5>7.1 Identificar y formular problemas complejos</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- fin del body-->
+
+        <div class="modal-footer">
+            
+                <button type="button " class="btn i-btn btnmodal" (click)="modal.close()">
+                    <p class="textico">Cancelar</p>
+                </button>
+                <button type="button " class="btn i-btn1 btnmodal">
+                    <p class="textico">Guardar</p>
+                </button>
+            
+        </div>
+    </div>
+</ng-template>

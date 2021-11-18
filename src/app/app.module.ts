@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { Reporte } from './components/Inti/Reporte/Reporte';
 import { MenuLateralComponent } from './components/Cobo/menu-lateral/menu-lateral.component';
 import { MenuHeaderComponent } from './components/Cobo/menu-header/menu-header.component';
 import { IniciarSesionComponent } from './components/Cobo/iniciar-sesion/iniciar-sesion.component';
@@ -39,6 +39,7 @@ import { UsuarioGuard } from './guards/usuario.guard';
 
 // Interceptors
 import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
     ComponentMateriaDirective,
     EvidenciasComponent,
     CarpetaEvidenciaComponent,
-    EvidenciaComponent
+    EvidenciaComponent,
+    Reporte,
   ],
   entryComponents: [
     componentMateria,
@@ -69,7 +71,8 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule
   ],
   providers: [
     UsuariosService,

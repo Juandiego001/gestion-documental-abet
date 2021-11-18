@@ -14,6 +14,8 @@ import { EvidenciaComponent } from "./components/Moya/evidencia/evidencia.compon
 import { EvidenciasComponent } from "./components/Moya/evidencias/evidencias.component";
 
 import { UsuarioGuard } from './guards/usuario.guard';
+import { Reporte } from './components/Inti/Reporte/Reporte';
+import { prueba } from './components/prueba/prueba';
 
 const routes: Routes = [
   {
@@ -48,6 +50,12 @@ const routes: Routes = [
   {
     path: 'evidencias',
     component: EvidenciasComponent
+  },
+  {
+    path: 'Reporte', component: Reporte,
+  },
+  {
+    path: 'prueba', component: prueba,
   }
 ];
 

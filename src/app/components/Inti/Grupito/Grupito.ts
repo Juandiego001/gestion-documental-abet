@@ -6,12 +6,12 @@ import { Component } from "@angular/core";
     styleUrls: ['./Grupito.css'],
 })
 
-export class Grupito{
-    public NombreGrupo: String; 
+export class Grupito {
+    public NombreProfesor: String;
 
-    constructor(){
-        this.NombreGrupo= "Andrés Chapman";
-        let Mensaje= `eje ${this.NombreGrupo}.`;
+    constructor() {
+        this.NombreProfesor = "Andrés Chapman";
+        let Mensaje = `eje ${this.NombreProfesor}.`;
         console.log(Mensaje);
     }
 }

@@ -1,48 +1,44 @@
-<!-- Menú Lateral -->
-<!-- Aplica para: MateriaFiltrada, Grupito, GrupoFiltrado -->
-<div class="i-container">
-    <!-- Logo al principio del menú -->
-    <div class="i-container1">
-        <img src="../../../assets/LogoUAO.png" alt="" class="i-logo">
-    </div>
-
-    <!-- Menú de elementos -->
+<!-- lateral -->
+<div class="i-containner">
     <div class="o-rr">
-
-        <!-- Elemento del menú: Nombre del profesor -->
-        <div (click)="navigate('home')" class="i-container2">
-            <img src="../../../assets/Profile.png" alt="" class="i-imgb">
-            <h6>{{NombreProfesor}}</h6>
+        <div class="i-container1">
+            <img src="../../../assets/LogoUAO.png" alt="" class="i-logo">
+        </div>
+        <div (click)="navigate('home')" class="i-container2 ">
+            <img src="../../../assets/Profile.png" class="i-profile">
+            <h4>{{NombreProfesor}}</h4>
             <img class="i-triangulo" src="../../../assets/Polygon8.png">
         </div>
-
-        <!-- Elemento del menú: Asignatura -->
         <div (click)="navigate('filtromateria')" class="i-container2">
-            <img src="../../../assets/libros.png" alt="" class="i-imgb">
-            <h6>Asignatura</h6>
+            <img src="../../../assets/libros.png" alt="" class="i-imgb2">
+            <h4>Asignatura</h4>
             <img class="i-triangulo" src="../../../assets/Polygon8.png">
         </div>
-
-        <!-- Elemento del menú: Grupos -->
         <div (click)="navigate('Grupo')" class="i-container2">
             <img src="../../../assets/educacion.png" alt="" class="i-imgb">
-            <h6>Grupos</h6>
+            <h4>Grupos</h4>
             <img class="i-triangulo" src="../../../assets/Polygon8.png">
         </div>
-
-        <!-- Elemento del menú: Mensaje -->
         <div class="i-container2">
             <img src="../../../assets/mensaje.png" alt="" class="i-imgb">
-            <h6>Mensaje</h6>
+            <h4>Mensaje</h4>
             <img class="i-triangulo" src="../../../assets/Polygon8.png">
         </div>
-
-        <!-- Elemento del menú: Reporte -->
-        <div class="i-container2">
+        <div class="i-container2" >
             <img src="../../../assets/reporte1.png" alt="" class="i-imgb">
-            <h6>Reporte</h6>
-            <img class="i-triangulo" src="../../../assets/Polygon8.png">
+            <button  class="  btnfiltross" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <h4>Reporte</h4>
+                <img class="i-triangulo" src="../../../assets/Polygon8.png">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a (click)="navigate('Reporte')" class="dropdown-item ">Generar reporte</a></li>
+                <li><a class="dropdown-item ">Mis reportes</a></li>
+            </ul>
         </div>
+    </div>
+    <div>
+        <img class="i-fondo" src="../../../assets/rojo.png" alt="">
+    </div>
 
-    </div>        
 </div>
