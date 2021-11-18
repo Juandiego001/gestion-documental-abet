@@ -14,7 +14,7 @@ export class filtromateria{
         let Mensaje= `eje ${this.Asignaturas}.`;
         console.log(Mensaje);
     }
-    navegate(url: String){
-        this.router.navigate([`/${url}`]);    
+    navegate(){
+        this.router.navigate(['/MateriaFiltrada']);    
     }
 }

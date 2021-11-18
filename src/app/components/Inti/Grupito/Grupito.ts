@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'Grupito',
@@ -9,9 +10,13 @@ import { Component } from "@angular/core";
 export class Grupito {
     public NombreProfesor: String;
 
-    constructor() {
+    constructor(private router: Router) {
         this.NombreProfesor = "Andrés Chapman";
         let Mensaje = `eje ${this.NombreProfesor}.`;
         console.log(Mensaje);
+    }
+
+    irEvidencia() {
+        this.router.navigate(['/evidencias']);
     }
 }
