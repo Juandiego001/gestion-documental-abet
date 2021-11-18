@@ -13,6 +13,9 @@ import { HomeDocentesComponent } from './components/Cobo/home-docentes/home-doce
 import { EvidenciaComponent } from "./components/Moya/evidencia/evidencia.component";
 import { EvidenciasComponent } from "./components/Moya/evidencias/evidencias.component";
 
+import { Reporte } from './components/Inti/Reporte/Reporte';
+import { ReporteGeneradoComponent } from './components/Cobo/reporte-generado/reporte-generado.component';
+
 import { UsuarioGuard } from './guards/usuario.guard';
 
 const routes: Routes = [
@@ -48,6 +51,14 @@ const routes: Routes = [
   {
     path: 'evidencias',
     component: EvidenciasComponent
+  },
+  {
+    path: 'reporte', 
+    component: Reporte,
+  },
+  {
+    path: 'reporte-generado',
+    component: ReporteGeneradoComponent
   }
 ];
 

@@ -1,7 +1,9 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule, TemplateRef } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA, TemplateRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,8 @@ import { Materiafiltrada } from './components/Legarda/MateriaFiltrada/MateriaFil
 import { EvidenciasComponent } from './components/Moya/evidencias/evidencias.component';
 import { CarpetaEvidenciaComponent } from './components/Moya/carpetaEvidencia/carpetaEvidencia.component';
 import { EvidenciaComponent } from './components/Moya/evidencia/evidencia.component';
+import { Reporte } from './components/Inti/Reporte/Reporte';
+import { ReporteGeneradoComponent } from './components/Cobo/reporte-generado/reporte-generado.component';
 
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatButtonModule } from "@angular/material/button";
@@ -58,7 +62,9 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
     ComponentMateriaDirective,
     EvidenciasComponent,
     CarpetaEvidenciaComponent,
-    EvidenciaComponent
+    EvidenciaComponent,
+    Reporte,
+    ReporteGeneradoComponent
   ],
   entryComponents: [
     componentMateria,
@@ -75,6 +81,8 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
   providers: [
     UsuariosService,
     CookieService,
+    NgbModalConfig, 
+    NgbModal,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JwtInterceptorInterceptor,
@@ -82,6 +90,6 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
     }
   ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
