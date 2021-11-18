@@ -1,89 +1,71 @@
-/* Contenedor: Contenedor de asignaturas */
-.i-container{
-    /* Se utiliza display grid */
-    /* para dividir en dos filas todo el contenedor del menú */
-    display: grid;
-    grid-template-rows: 20% 80%;
-    /* El ancho se ha dispuesto del 100% */
-    /* Ya que el presente componente se inserta dentro de otro componente */
-    /* El cual automáticamente por medio del display grid, le asigna un width del 25% */
-    width: 100%;
-    height: 100%;
-    background-image: url('../../../assets/rojo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* Todos los elementos dentro del menu-lateral */
-    /* (incluido el h6) tendra como color de texto blanco */
-    color: white;
-}
-
-/* Contenedor: Contiene la imagen del logo */
-.i-container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-/* Imagen: Logo del menú al principio */
-.i-logo{
-    /* Se alinea la imagen del logo */
-    /* al centro de su disposición */
-    width: 25%;
-}
-
-/* Contenedor del menú */
-.o-rr{
-    /* Se utiliza display grid */
-    /* para organizar cada Contenedor de cada elemento */
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    width: 100%;
-    height: 70%;
-}
-
-/* Contenedor de cada elemento del menú */
-.i-container2{
-    /* Se aplica display grid. Tres columnas: */
-    /* Img, h6 e img de la flecha */
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    width: 85%;
-    height: 100%;
-    border-top: 1px solid white;
-}
-
-/* Efecto Hover */
-.i-container2:hover{
-    background: rgba(242, 242, 242, 0.2);
-    border-radius: .5rem;
-    cursor: pointer;
-}
-
-/* Seleccionando todas las imagenes del contenedor i-container2 */
-.i-container2 img{
-    width: 60%;
-    align-self: center;
-    justify-self: center;
-}
-
-.i-container2 img:nth-child(3){
-    width: 30%;
-}
-
-/* H6 del container i-container2 */
-.i-container2 h6{
-    height: 100%;
-    width: 100%;
-    font-family: 'Roboto';
-    font-size: 1.15rem;
+.btnfiltross{
+    background-color: transparent;
     display: flex;
     align-items: center;
-    align-self: center;
-    justify-self: flex-start;
-    padding-left: 5%;
-    margin: 0;
-}
-
+    justify-content: space-between;
+    border-color: transparent;
+    width: 70%;
+    
+    }
+    
+    h4{
+        color: white;
+    }
+    .i-containner{
+        width: 261px;
+        height: 100%;  
+    
+    }
+    .i-fondo{
+    height: 961px;
+    
+    }
+    .o-rr{position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .i-container1{
+       display: flex;
+       justify-content: center;
+       padding: 15px;
+       border-bottom: 2px solid white;
+       margin-left: 20px;
+       margin-right: 20px;
+       width: 100%;
+    }
+    .i-logo{
+        width: 55px;
+        height: 43px;
+    }
+    .i-container2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid white;  
+        margin: 20px;
+        padding: 2px;
+        width: 100%;
+        height: 70px;
+        cursor: pointer;    
+        
+    }
+    .i-container2:hover{
+        background: rgba(242, 242, 242, 0.2);
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+    .box:i-container
+    
+    .i-imgb{
+        width: 30px;
+        height: 30px;    
+    }
+    .i-profile{
+        width: 40px;
+        height: 40px;   
+    }
+    
+    .i-triangulo{
+        width: 13px;
+        height: 8px; 
+    }

@@ -1,45 +1,48 @@
  /* Contenedor general: Contiene toda la página */
  .i-pagina{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    height: 100vh;    
+    display: flex;
 }
 
 /* Se selecciona el segundo elemento hijo (div) */
 /* que contiene todo lo demás de la página */
 .section-pagina {
-    width: 100%;
+    width: 100rem;
     height: 100vh;
+    margin-left: 50px;
     display: grid;
-    grid-template-rows: 10% 10% 80%;
+   
 }
 
 .section-pagina-asignaturas div:only-child {
     width: 100%;
+   
 }
 
 /* Contenedor Header de la página */
 .rjo {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid gray;
+    width: 99rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid gray; 
 }
 
 /* Se selecciona el H4 del contenedor Header de la página */
 .rjo h4 {
-    align-self: center;
-    padding-left: .75rem;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 /* Contenedor de imágenes: Mensaje y Usuario (para cerrar sesión) */
 .rjo1{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    width: 12rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .rjo1 img {
@@ -49,10 +52,13 @@
 
 /* Contenedor menú de filtros */
 .i-filter {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 92rem;
 }
 
 /* Contenedor: Contiene cada uno de los elementos y submenús */
@@ -125,9 +131,116 @@
     height: 100%;
     display: grid;
 }
+.i-grupito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute
+    
+}
 
 .i-empezar > div {
     align-self: center;
     justify-self: center;
     text-align: center;
 }
+
+.i-uaoFondo{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:98rem;
+    height: 100%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    border-color: black;
+}
+.i-drops{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45rem;
+    
+ }
+
+
+ /* para el modal*/
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    }
+    .crc {
+        font-weight: bold;
+    }
+    h2{
+        color: white;
+    }
+    
+    .modal-lg{
+        width: 900px;
+    }
+    .modal-header{
+        background-color: red;
+    }
+    .modal-body{
+       
+    }
+    .i-container{
+        display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+    .btnmodal{
+        background-color: white;
+        border-color: gray;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .filtrito{
+        width: 12rem;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .i-datos1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .i-container2{
+        display: flex;
+        width: 21rem;
+        justify-content: space-between;
+    }
+    .textico{
+        font-size: medium;
+        margin-top: 0.8rem;
+    
+    }
+    .i-btn{
+        height: 2rem;
+       background-color:  rgba(164, 169, 173, 1);
+       border-color: transparent;
+       color: white;
+    }
+    .i-btn1{
+        height: 2rem;
+       background-color: rgba(55, 196, 122, 1);
+       border-color: transparent;
+       color: white;
+    }
+    .modal-footer{
+        display: flex;
+    
+        justify-content: center;
+    }

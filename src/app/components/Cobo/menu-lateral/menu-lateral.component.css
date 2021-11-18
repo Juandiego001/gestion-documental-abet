@@ -6,6 +6,7 @@
     display: grid;
     grid-template-rows: 15% 85%;
     position: fixed;
+    top: 0;
 }
 
 /* Imagen de fondo del menú lateral: Librería */

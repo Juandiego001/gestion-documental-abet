@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { prueba } from "../../prueba/prueba";
 
 @Component({
     selector: 'Reporte',
