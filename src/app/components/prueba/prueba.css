@@ -1,0 +1,71 @@
+.btnfiltross{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: transparent;
+    width: 70%;
+    
+    }
+    
+    h4{
+        color: white;
+    }
+    .i-containner{
+        width: 261px;
+        height: 100%;  
+    
+    }
+    .i-fondo{
+    height: 961px;
+    
+    }
+    .o-rr{position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .i-container1{
+       display: flex;
+       justify-content: center;
+       padding: 15px;
+       border-bottom: 2px solid white;
+       margin-left: 20px;
+       margin-right: 20px;
+       width: 100%;
+    }
+    .i-logo{
+        width: 55px;
+        height: 43px;
+    }
+    .i-container2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid white;  
+        margin: 20px;
+        padding: 2px;
+        width: 100%;
+        height: 70px;
+        cursor: pointer;    
+        
+    }
+    .i-container2:hover{
+        background: rgba(242, 242, 242, 0.2);
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+    .box:i-container
+    
+    .i-imgb{
+        width: 30px;
+        height: 30px;    
+    }
+    .i-profile{
+        width: 40px;
+        height: 40px;   
+    }
+    
+    .i-triangulo{
+        width: 13px;
+        height: 8px; 
+    }

@@ -1,0 +1,99 @@
+/* Header: Asignaturas - Mensajes - Usuario */
+.contenedor-menu-header {
+    margin-left: 23%;
+    width: 74%;
+    margin-right: 3%;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.contenedor-menu-header h6{
+    font-family: 'Roboto';
+    align-self: center;
+    font-size: 1.85rem;
+    color: rgb(57, 57, 57);
+}
+
+.contenedor-menu-header .notificacion{
+    width: 36px;    
+    height: 36px;
+    background-image: url('../../../../assets/imgs/notificacion.png');
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.notificacion::before{
+    content: "5";
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-menu-header .usuario{
+    align-self: center;
+}
+
+.contenedor-menu-header .usuario:hover {
+    cursor: pointer;
+}
+
+/* Contenedor cerrar sesión */
+.container-cerrar-sesion{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: white;
+    right: 3%;
+    top: 12%;
+    border-radius: 5%;
+    border: 1px solid black;
+    display: none;
+    grid-template-rows: 40% 60%;
+    z-index: 99;
+}
+
+/* Se encarga de mostrar el apartado para cerrar sesión */
+.mostrar-container-cerrar-sesion {
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.container-cerrar-sesion > div {
+    justify-self: center;
+    width: 95%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: grid;
+}
+
+.container-cerrar-sesion > div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-cerrar-sesion ul{
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: .85rem;
+    padding-left: 15%;
+    align-self: center;
+}

@@ -1,0 +1,99 @@
+<div class="i-pagina">
+    <prueba></prueba>
+    <div class="section-pagina">
+        <!-- Menú Header de la página (En la parte top de la página) -->
+        <div class="rjo">
+            <div class="rjoName">
+                <h4>Generar reporte</h4>
+            </div>
+            <div class="rjo1">
+                <img class="i-rjo" src="../../../assets/mensajeblack.png" alt="">
+                <img class="i-rjo" src="../../../assets/user.png" alt="">
+            </div>
+        </div>
+        <!-- Menú de filtros: Filtrar por asignatura, periodo académico o crear asignatura -->
+        <div class="i-filter">
+            <div class="i-drops">
+                <!-- Filtro de asignatura -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Asignatura
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" (click)="setAsignatura('Fundamentos de ingeniería multimedia')">{{Materia1}}</a></li>
+                        <li><a class="dropdown-item" (click)="setAsignatura('Seminario de taller multimedia')">{{Materia2}}</a></li>
+                        <li><a class="dropdown-item" (click)="setAsignatura('Computación gráfica')">Computación gráfica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Filtro de periodo académico -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Periodo académico
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" (click)="setPeriodo('2021-01')">{{periodo1}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPeriodo('2021-03')">{{periodo2}}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Filtro de student outcomes -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Student Outcomes
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" (click)="setSO('RAE-1')">{{student1}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-2')">{{student2}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-3')">{{student3}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-4')">{{student4}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-5')">{{student5}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-6')">{{student6}}</a></li>
+                        <li><a class="dropdown-item" (click)="setSO('RAE-7')">{{student7}}</a></li>
+                    </ul>
+                </div>
+                <!-- Filtro de Indicadores de desempeño -->
+                <div class="dropdown contenedor-filtro">
+                    <button class="btn btn-light dropdown-toggle btnfiltross" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Indicadores de desempeño
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" (click)="setPI('1.1')">{{pi1}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('2.1')">{{pi2}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('3.1')">{{pi3}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('4.1')">{{pi4}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('5.1')">{{pi5}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('6.1')">{{pi6}}</a></li>
+                        <li><a class="dropdown-item" (click)="setPI('7.1')">{{pi7}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Botón para crear grupo -->
+            <div class="contenedor-boton-crear-asignatura">
+                <button type="button" class="btn btn btn-light btnfiltross"  (click)="generarReporte()">
+                    Generar reporte
+                </button>
+            </div>
+        </div>
+                <!-- Sección de la sección principal. -->
+        <!-- Se muestra la imagen de búsqueda y demás detalles -->
+
+        <!-- Contenedor de prototipo. -->
+        <!-- Muestra la imagen de la lupa e información para empezar a buscar -->
+        <div class="i-fondo">
+            <div class="i-empezar">
+                <img src="../../../assets/empezar.png" alt="" class="i-imgb">
+                <h2>Empezar búsqueda</h2>
+                <h4>Añade filtros para poder visualizar los cursos de su preferencia</h4>
+            </div>
+            <div class="i-uaoFondo">
+                <img src="../../../assets/UAO-logo-fondo.png" alt="" class="i-imgb">
+            </div>
+        </div>
+
+    </div>
+</div>

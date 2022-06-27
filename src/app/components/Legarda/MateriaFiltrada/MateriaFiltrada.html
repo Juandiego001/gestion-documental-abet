@@ -1,0 +1,112 @@
+<!-- Contenedor general de toda la página -->
+<div class="i-pagina">
+    <!-- Menú Lateral -->
+    <prueba></prueba>
+    
+    <!-- Section de la página -->
+    <div class="section-pagina">
+        <!-- Menú Header de la página (En la parte top de la página) -->
+        <div class="rjo">
+            <!-- Titulo: Asignaturas -->
+            <h4>Asignaturas</h4>
+            
+            <!-- Contenedor de iconos mensaje y usuario (para cerrar sesión) -->
+            <div class="rjo1">
+                <img class="i-rjo" src="../../../assets/mensajeblack.png" alt="">
+                <img class="i-rjo" src="../../../assets/user.png" alt="">
+            </div>
+        </div>
+
+        <!-- Menú de filtros: Filtrar por asignatura, periodo académico o crear asignatura -->
+        <div class="i-filter">
+
+            <!-- Filtro de asignatura -->
+            <div class="dropdown contenedor-filtro">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asignatura
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- Filtro de periodo académico -->
+            <div class="dropdown contenedor-filtro">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Periodo académico
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <!-- Botón para crear asignatura -->
+            <div class="contenedor-boton-crear-asignatura">
+                <button (click)="togglerContenedorAsignatura(); false" type="button" class="btn btn btn-light">Crear asignatura</button>
+            </div>
+        </div>
+
+        <!-- Contenedor principal de la página. -->
+        <!-- Aquí se mostraran las tarjetas donde -->
+        <!-- se han creado las asignaturas -->
+        <div #contenedorAsigaturas class="section-pagina-asignaturas">
+            <!-- Componente de tarjetas de cada asignatura -->
+            <div class="row">
+                <!-- Primera tarjeta de primer asignatura -->
+                <div class="col-4">
+                    <componentMateria [srcImg]="'../../../assets/fun.png'" [nombreAsignatura]="'Fundamentos de Ingeniería Multimedia'" [cantidadCursos]="50" [codigoAsignatura]="34999" [periodoAcademico]="'2021-03'"></componentMateria>
+                </div>
+                <div class="col-4">
+                    <componentMateria [srcImg]="'../../../assets/sem.png'" [nombreAsignatura]="'Seminario taller multimedia'" [cantidadCursos]="50" [codigoAsignatura]="34999" [periodoAcademico]="'2021-03'"></componentMateria>
+                </div>
+                <div class="col-4">
+                    <componentMateria [srcImg]="'../../../assets/comp.png'" [nombreAsignatura]="'Computación multimedia'" [cantidadCursos]="50" [codigoAsignatura]="34999" [periodoAcademico]="'2021-03'"></componentMateria>
+                </div>
+                <!-- Temporalmente se queda así -->
+                <div class="col-4">
+                    <ng-template #ngTemp comMateriaHost></ng-template>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de fondo para crear asignatura -->
+        <div [ngClass]="{'ocultar-contenedor-asignatura': togglearContenedor == true}" class="contenedor-crear-asignatura">
+            <!-- Ventana para crear asignatura -->
+            <div class="crear-asignatura">
+                <h3>Crear asignaturas</h3>  
+        
+                <form class="formularioCrearAsignatura">
+                    <div>
+                        <label for="nombreAsignatura">Nombre asignatura<span>*</span></label>
+                        <input #nombreAsignatura type="text" name="nombreAsignatura" id="nombreAsignatura" />
+                    </div>
+
+                    <div>
+                        <label for="creditosAsignatura">Número de créditos<span>*</span></label>
+                        <input #creditosAsignatura type="number" name="creditosAsignatura" id="creditosAsignatura" />
+                    </div>
+
+                    <div>
+                        <label for="programaAsignatura">Programa académico<span>*</span></label>
+                        <input #programaAsignatura type="text" name="programaAsignatura" id="programaAsignatura" />
+                    </div>
+
+                    <div>
+                        <label for="codigoAsignatura">Código de la asignatura<span>*</span></label>
+                        <input #codigoAsignatura type="text" name="codigoAsignatura" id="codigoAsignatura" />
+                    </div>
+                </form>
+
+                <div class="contenedor-botones-crear-asignatura">
+                    <button (click)="togglerContenedorAsignatura(); false" class="boton-cancelar-asignatura">Cancelar</button>
+                    <button (click)="addCard(); false" class="boton-guardar-asignatura">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
