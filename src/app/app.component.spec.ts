@@ -30,10 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-<<<<<<< HEAD
     expect(compiled.querySelector('.content span')?.textContent).toContain('gestion-documental-ABET app is running!');
-=======
-    expect(compiled.querySelector('.content span')?.textContent).toContain('uao-accreditation-angular app is running!');
->>>>>>> 4d1402c5ce2ce95854e8897c89b2edff54b847cd
   });
 });

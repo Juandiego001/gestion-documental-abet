@@ -1,3 +1,22 @@
-<h2 class="bg-info">
-    home works!
+<h2 class="w-100 py-3 px-3 bg-primary text-white text-center">
+    Gestión documental para la acreditación internacional ABET
 </h2>
+
+
+<form class="mt-5 w-75 mx-auto">
+    <div class="mb-3">
+        <label for="correo">Usuario</label>
+        <input class="form-control" name="usuario" id="usuario" type="text" placeholder="Digite aquí su nombre de usuario" />
+    </div>
+
+    <div class="mb-5">
+        <label for="contrasena">Contraseña</label>
+        <input class="form-control" name="contrasena" id="contrasena" type="password" placeholder="Digite aquí su contraseña"/>
+    </div>
+
+    <div class="container-fluid text-center">
+        <button (click)="iniciarSesion($event)" class="btn btn-primary btn-lg">Iniciar sesión</button>
+    </div>
+</form>
+
+
